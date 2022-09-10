@@ -7,7 +7,7 @@
     <body>
 <ol>
     <li><a id="top" href="http://example.com">Сылка на главную страницу сайта example.com</a></li>
-    <li><a href="https://example.com">Абсолютная ссылка на главную старницу сайта example.com в протоколе https </a></li>
+    <li><a href="https://example.com">Абсолютная ссылка на главную старницу сайта example.com в протоколе https</a></li>
     <li><a href="FTP://example.com"> FTP без авторизации</a></li>
     <li><a href="FTP://admin:1234@example.com">FTP с авторизацией</a></li>
     <li><a href="https://ru.wikipedia.org/wiki/Краснодар#Достопримечательности">Ссылка на фрагмент страницы некоторого сайта</a></li>
@@ -48,46 +48,37 @@
 </ol>
 <br>
 <ol>
+    <form>
     <li>
-        <form>
         <p>
             <label>Имя:</label>
             <input maxlength="25" size="25">
         </p>
-        </form>
     <li>
-        <form>
             <p>
                 <label>email:</label> 
                 <input maxlength="128" size="40" type="email" name="login">
             </p>
-        </form>
     </li>
     <li>
-        <form>
             <p>
                 <label>Дата рождения: </label>
                 <input type="date"/>
             </p>
-        </form>
     </li>
     <li>
-        <form>
                 <label>Пол:</label>
                 <p><input name="pol" type="radio" checked> Мужской</p>
                 <p><input name="pol" type="radio"> Женский</p>
-        </form>
     </li>
     <li>
-        <form>
                 <label>Количество конечностей:</label>
                 <p><input name="kon" type="radio" checked> 4</p>
                 <p><input name="kon" type="radio"> 6</p>
                 <p><input name="kon" type="radio"> 8</p>
-        </form>
     </li>
     <li>
-        <form>
+        
             <label>Суперспособности:</label>
             <br>
             <select name="super" multiple="multiple" size="3">
@@ -95,27 +86,28 @@
                 <option value="2">Прохождение сквозь стены</option>
                 <option value="3">Левитация</option>
             </select>
-        </form>
+        
+        <br>
         <br>
     </li>
     <li>
-        <form>
+        
             <label>Поле для биографии:</label>
             <p><textarea cols="30" rows="20" maxlength="625" name="bio"></textarea></p>
-        </form>
+        
     </li>
     <li>
-        <form>
             <label>С контрактом ознакомлен(а):</label>
             <input type="checkbox">
-        </form>
-        <br>
+            <br>
+            <br>
     </li>
     <li>
-        <form>
+        
             <button>Отправить</button>
-        </form>
+        
     </li>
+    </form>
 </ol>
 </body>
 </html>
