@@ -47,67 +47,90 @@
     <li><a href="#top"> Сокращенная внутренняя ссылка</a></li>
 </ol>
 <br>
-<ol>
     <form>
-    <li>
-        <p>
-            <label>Имя:</label>
-            <input maxlength="25" size="25">
-        </p>
-    <li>
-            <p>
-                <label>email:</label> 
-                <input maxlength="128" size="40" type="email" name="login">
-            </p>
-    </li>
-    <li>
-            <p>
-                <label>Дата рождения: </label>
-                <input type="date"/>
-            </p>
-    </li>
-    <li>
-                <label>Пол:</label>
-                <p><input name="pol" type="radio" checked> Мужской</p>
-                <p><input name="pol" type="radio"> Женский</p>
-    </li>
-    <li>
-                <label>Количество конечностей:</label>
-                <p><input name="kon" type="radio" checked> 4</p>
-                <p><input name="kon" type="radio"> 6</p>
-                <p><input name="kon" type="radio"> 8</p>
-    </li>
-    <li>
+        <label>
+                Имя: 
+                <input name="name_polz" maxlength="25" size="25" value="Введите ваше имя">
+        </label>
+        <br>
+        <br>
+
+        <label>
+                email: 
+                <input name="email_polz" type="email" maxlength="128" size="40" placeholder="Введите ваш email">
+        </label>
+        <br>
+        <br>
+
+        <label>
+                Дата рождения: 
+                <input name="data_polz" type="date" value="2022-01-01">
+        </label>
+        <br>
+        <br>
+
+        <label>
+                Пол:
+                <input name="pol" type="radio" checked="checked"> 
+                Мужской
+        </label>
+
+        <label>
+                <input name="pol" type="radio"> 
+                Женский
+        </label>
+        <br>
+        <br>
+
+        Количество конечностей:
+        <label>
+            <input name="kol_kon" type="radio" checked> 
+            4
+        </label>
         
-            <label>Суперспособности:</label>
+        <label>
+            <input name="kol_kon" type="radio"> 
+            6
+        </label>
+
+        <label>
+            <input name="kol_kon" type="radio"> 
+            8
+        </label>
+        <br>
+        <br>
+
+        <label>
+            Суперспособности:
             <br>
             <select name="super" multiple="multiple" size="3">
                 <option value="1">Бессмертие</option>
                 <option value="2">Прохождение сквозь стены</option>
                 <option value="3">Левитация</option>
             </select>
-        
+        </label>
         <br>
         <br>
-    </li>
-    <li>
-        
-            <label>Поле для биографии:</label>
-            <p><textarea cols="30" rows="20" maxlength="625" name="bio"></textarea></p>
-        
-    </li>
-    <li>
-            <label>С контрактом ознакомлен(а):</label>
+
+        <label>
+            Поле для биографии:
+            <br>
+            <textarea name="bio" cols="30" rows="20" maxlength="625">Ваша биография</textarea>
+        </label>
+        <br>
+        <br>
+
+        <label>
+            С контрактом ознакомлен(а):
             <input type="checkbox">
-            <br>
-            <br>
-    </li>
-    <li>
+        </label>
+        <br>
+        <br>
         
-            <button>Отправить</button>
+        <Label>
+            <input type="submit" value="Отправить">
+        </Label>
         
-    </li>
     </form>
-</ol>
 </body>
 </html>
