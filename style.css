@@ -9,6 +9,11 @@
     height: 120px;
 }
 
+#Logoh1{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 #logo{
     
     float: left;
