@@ -3,7 +3,7 @@
 }
 
 #header{
-    width: 100%-20px;
+    width: 100%;
     background-color: rgb(206, 234, 236);
     padding: 10px;
     height: 120px;
@@ -71,7 +71,7 @@
 }
 
 #footer{
-    width: 100%-60px;
+    width: 100%;
     background-color: rgb(206, 234, 236);
     height: 70px;
     padding: 30px;
