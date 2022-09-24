@@ -4,16 +4,52 @@
     margin: 0;
 }
 
-#logo{
-    float: left;
-    height: 50px;
-    width: 70px;
+#body header{
+    background-color: rgb(206, 234, 236);
+    height: 10vh;
+    width: 100vw;
+    padding: 2vw;
+    margin-bottom: 2vh;
+    order: 1;
 }
 
-#body header, #body nav, .content {
+#logo{
+    float: left;
+    height: 10vh;
+    width: 18vw;
+}
+
+#h1{
+    margin-left: 50vw;
     background-color: rgb(206, 234, 236);
-    margin: 10px 0px 10px 0px;
-    padding: 10px;
+    color: #1c8f85;
+    height: 10vh;
+    width: 20vw;
+}
+
+#body nav{
+    background-color: rgb(206, 234, 236);
+    margin: 2vh 0vh 2vh 0vh;
+    padding: 2vw;
+    order: 2;
+    width: 100vw;
+    height: 10vh;
+}
+
+#content_1{
+    background-color: rgb(206, 234, 236);
+    margin: 2vh 0vh 2vh 0vh;
+    padding: 1vw;
+    order: 3;
+    width: 100vw;
+}
+
+#content_2{
+    background-color: rgb(206, 234, 236);
+    margin: 2vh 0vh 2vh 0vh;
+    padding: 2vw;
+    order: 5;
+    width: 100vw;
 }
 
 #body table{
@@ -27,6 +63,22 @@
 
 .chet{
     background-color: rgb(243, 125, 115);
+}
+
+#content_3{
+    background-color: rgb(206, 234, 236);
+    margin: 2vh 0vh 2vh 0vh;
+    padding: 2vw;
+    order: 4;
+    width: 100vw;
+}
+
+#body footer{
+    background-color: rgb(206, 234, 236);
+    margin: 2vh 0vh 0vh 0vh;
+    padding: 2vw;
+    order: 6;
+    width: 100vw;
 }
 
 
