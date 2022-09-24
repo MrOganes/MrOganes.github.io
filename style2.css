@@ -1,124 +1,125 @@
-@media (max-width: 800px){
+@media (max-width: 800px) {
 
-#body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-}
-
-#body header{
-    background-color: rgb(206, 234, 236);
-    height: 10vh;
-    flex: 1;
-    padding: 2vw;
-    order: 1;
-}
-
-#logo{
-    float: left;
-    height: 10vh;
-    width: 25vw;
-}
-
-#h1{
-    padding-top: 3vh;
-    margin-left: 50vw;
-    background-color: rgb(206, 234, 236);
-    color: #1c8f85;
-    font-size: calc(3vh*1.2);
-    padding-bottom: calc(2vh*1.1);
-}
-
-.nav{
-    font-size: calc(2vh*1.2);
-}
-
-#body nav{
-    background-color: rgb(206, 234, 236);
-    margin: 2vh 0vh 0vh 0vh;
-    padding: 2vw;
-    order: 2;
-    flex: 1;
-    height: 10vh;
-}
-
-#content_1{
-    background-color: rgb(206, 234, 236);
-    margin: 2vh 0vh 0vh 0vh;
-    padding: 2vw;
-    order: 3;
-    flex: 1;
-    padding-left: 3vw;
-}
-
-#content_2{
-    background-color: rgb(206, 234, 236);
-    margin: 2vh 0vh 0vh 0vh;
-    padding: 2vw;
-    order: 5;
-    flex: 1;
-}
-
-#body table{
-    height: 15vh;
-    width: 40vw;
-}
-
-.ne_chet{
-    background-color: rgb(197, 156, 236);
-}
-
-.chet{
-    background-color: rgb(243, 125, 115);
-}
-
-#content_3{
-    background-color: rgb(206, 234, 236);
-    margin: 2vh 0vh 0vh 0vh;
-    padding: 2vw;
-    order: 4;
-    flex: 1;
-}
-
-#body footer{
-    background-color: rgb(206, 234, 236);
-    margin-top: 2vh;
-    padding: 2vw;
-    order: 6;
-    flex: 1;
-}
-}
-@media (min-width: 800px){
-    #body{
-        margin:0;
+    #body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
     }
-    
-    #header{
+
+    #body header {
+        background-color: rgb(206, 234, 236);
+        height: 10vh;
+        flex: 1;
+        padding: 2vw;
+        order: 1;
+    }
+
+    #logo {
+        float: left;
+        height: 10vh;
+        width: 25vw;
+    }
+
+    #h1 {
+        padding-top: 3vh;
+        margin-left: 50vw;
+        background-color: rgb(206, 234, 236);
+        color: #1c8f85;
+        font-size: calc(3vh*1.2);
+        padding-bottom: calc(2vh*1.1);
+    }
+
+    .nav {
+        font-size: calc(2vh*1.2);
+    }
+
+    #body nav {
+        background-color: rgb(206, 234, 236);
+        margin: 2vh 0vh 0vh 0vh;
+        padding: 2vw;
+        order: 2;
+        flex: 1;
+        height: 10vh;
+    }
+
+    #content_1 {
+        background-color: rgb(206, 234, 236);
+        margin: 2vh 0vh 0vh 0vh;
+        padding: 2vw;
+        order: 3;
+        flex: 1;
+        padding-left: 3vw;
+    }
+
+    #content_2 {
+        background-color: rgb(206, 234, 236);
+        margin: 2vh 0vh 0vh 0vh;
+        padding: 2vw;
+        order: 5;
+        flex: 1;
+    }
+
+    #body table {
+        height: 15vh;
+        width: 40vw;
+    }
+
+    .ne_chet {
+        background-color: rgb(197, 156, 236);
+    }
+
+    .chet {
+        background-color: rgb(243, 125, 115);
+    }
+
+    #content_3 {
+        background-color: rgb(206, 234, 236);
+        margin: 2vh 0vh 0vh 0vh;
+        padding: 2vw;
+        order: 4;
+        flex: 1;
+    }
+
+    #body footer {
+        background-color: rgb(206, 234, 236);
+        margin-top: 2vh;
+        padding: 2vw;
+        order: 6;
+        flex: 1;
+    }
+}
+
+@media (min-width: 800px) {
+    #body {
+        margin: 0;
+    }
+
+    #header {
         width: 100%;
         background-color: rgb(206, 234, 236);
         padding: 10px 0px 10px 0px;
         height: 120px;
     }
-    
-    #Logoh1{
+
+    #Logoh1 {
         max-width: 960px;
         margin: 0 auto;
     }
-    
-    #logo{
+
+    #logo {
         float: left;
         margin: 10px;
         width: 130px;
         height: 100px;
     }
-    
-    #h1{
+
+    #h1 {
         background-color: rgb(206, 234, 236);
         padding: 10px;
         color: #1c8f85;
     }
-    
-    #nav{
+
+    #nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -128,32 +129,32 @@
         margin-top: 20px;
         padding: 10px;
     }
-    
-    .content{
+
+    .content {
         max-width: 960px;
         background-color: rgb(206, 234, 236);
         margin: 0 auto;
         margin-top: 20px;
         padding: 10px;
     }
-    
-    .ne_chet{
+
+    .ne_chet {
         background-color: rgb(197, 156, 236);
     }
-    
-    .chet{
+
+    .chet {
         background-color: rgb(243, 125, 115);
     }
-    
-    #footer{
+
+    #footer {
         width: 100%;
         background-color: rgb(206, 234, 236);
         height: 70px;
         padding: 30px 0px 30px 0px;
         margin-top: 20px;
     }
-    
-    #sozd{
+
+    #sozd {
         margin: 30px 0px 0px 60px;
     }
 }
