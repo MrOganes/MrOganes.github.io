@@ -1,0 +1,76 @@
+header {
+    background-color: rgb(206, 234, 236);
+}
+
+#h1 {
+    background-color: rgb(206, 234, 236);
+    color: #1c8f85;
+}
+
+nav {
+    max-width: 960px;
+    background-color: rgb(206, 234, 236);
+}
+
+#content_1 {
+    background-color: rgb(206, 234, 236);
+}
+
+#content_2 {
+    background-color: rgb(206, 234, 236);
+}
+
+#content_3 {
+    background-color: rgb(206, 234, 236);
+}
+
+.ne_chet {
+    background-color: rgb(197, 156, 236);
+}
+
+.chet {
+    background-color: rgb(243, 125, 115);
+}
+
+footer {
+    background-color: rgb(206, 234, 236);
+}
+
+@media (min-width: 768px){
+    header{
+        height: 120px;
+    }
+    #Logoh1 {
+        max-width: 960px;
+    }
+    #logo{
+        height: 100px;
+        width: 120px;
+    }
+    #con3{
+        text-align: right;
+    }
+    #con2{
+        text-align: center;
+    }
+    footer{
+        height: 130px;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        height: 14vh;
+
+    }
+
+    #logo {
+        height: 10vh;
+        width: 25vw;
+    }
+
+    #h1{
+        text-align: left;
+        font-size: calc(3vh*1.2);
+    }
+}
