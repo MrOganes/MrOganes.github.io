@@ -8,7 +8,7 @@ function onClick() {
     x = parseInt(x);
     y = parseInt(y);
     r.innerHTML = x * y;
-    return false
+    return false;
 }
 
 function prov() {
