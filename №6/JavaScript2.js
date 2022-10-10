@@ -11,7 +11,7 @@ function onClick() {
     return false;
 }
 
-function prov() {
+function prov1() {
     let clear = document.getElementById("result");
     clear.innerHTML = "";
     let a = document.getElementById("kol1").value;
