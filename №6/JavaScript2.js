@@ -59,7 +59,7 @@ function Price() {
 
 function prov() {
     let a = document.getElementById("kol").value;
-    return (/\D/.test(a))
+    return (/\D/.test(a));
 }
 
 function money() {
