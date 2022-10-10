@@ -16,13 +16,10 @@ function prov() {
     clear.innerHTML = "";
     let a = document.getElementById("kol").value;
     let b = document.getElementById("price").value;
-    let ex = /\D/;
-    a = ex.test(a);
-    b = ex.test(b);
-    if (a === true && b === true) {
-        onClick();
-    } else {
+    if ((/\D/.test(a)) || (/\D/.test(b))) {
         alert("Введенные данные некорректны!");
+    } else {
+        onClick();
     }
 }
 
