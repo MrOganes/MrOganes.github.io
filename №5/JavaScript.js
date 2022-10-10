@@ -16,7 +16,7 @@ function prov() {
     clear.innerHTML = "";
     let a = document.getElementById("kol").value;
     let b = document.getElementById("price").value;
-    let ex = /\D+/;
+    let ex = /\D/;
     a = ex.test(a);
     b = ex.test(b);
     if (a === true && b === true) {
