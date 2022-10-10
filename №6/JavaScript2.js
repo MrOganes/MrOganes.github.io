@@ -12,15 +12,15 @@ function onClick() {
 }
 
 function prov1() {
-  let clear = document.getElementById("result1");
-  clear.innerHTML = "";
-  let a = document.getElementById("kol1").value;
-  let b = document.getElementById("price").value;
-  if ((/\D/.test(a)) || (/\D/.test(b))) {
-     alert("Введенные данные некорректны!");
-  } else {
-     onClick();
-  }
+    let clear = document.getElementById("result1");
+    clear.innerHTML = "";
+    let a = document.getElementById("kol1").value;
+    let b = document.getElementById("price").value;
+    if ((/\D/.test(a)) || (/\D/.test(b))) {
+        alert("Введенные данные некорректны!");
+    } else {
+        onClick();
+    }
 }
 
 window.addEventListener("DOMContentLoaded", function () {
@@ -59,7 +59,7 @@ function Price() {
 
 function prov() {
     let a = document.getElementById("kol").value;
-    return (/\D/.test(a))===false;
+    return (/\D/.test(a)) === false;
 }
 
 function money() {
