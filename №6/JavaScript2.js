@@ -25,7 +25,7 @@ function prov1() {
 
 window.addEventListener("DOMContentLoaded", function () {
     let c = document.getElementById("my-button");
-    c.addEventListener("click", prov1);
+    c.addEventListener("click", prov1());
 });
 
 
