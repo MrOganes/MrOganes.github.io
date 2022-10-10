@@ -11,18 +11,15 @@ function onClick() {
     return false;
 }
 
-function prov1() {
-    let clear = document.getElementById("result1");
+function prov() {
+    let clear = document.getElementById("result");
     clear.innerHTML = "";
     let a = document.getElementById("kol1").value;
     let b = document.getElementById("price").value;
-    let ex = /\d+/;
-    a = ex.test(a);
-    b = ex.test(b);
-    if (a === true && b === true) {
-        onClick();
-    } else {
+    if ((/\D/.test(a)) || (/\D/.test(b))) {
         alert("Введенные данные некорректны!");
+    } else {
+        onClick();
     }
 }
 
@@ -62,9 +59,7 @@ function Price() {
 
 function prov() {
     let a = document.getElementById("kol").value;
-    let ex = /\d+/;
-    a = ex.test(a);
-    return a;
+    return (/\D/.test(a))
 }
 
 function money() {
