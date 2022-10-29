@@ -10,7 +10,7 @@ function openForm() {
 }
 
 function openHome() {
-    window.history.back();
+    window.history.go(-1);
     return false;
 }
 
