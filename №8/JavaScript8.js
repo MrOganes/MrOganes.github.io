@@ -1,49 +1,101 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <title>Задание 8</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/slapform@latest/dist/index.min.js"></script>
-    <script src="JavaScript.js" defer></script>
-  </head>
+/*global
+history, Slapform, addEventListener, $
+*/
+/*jslint browser */
+/*jslint devel */
 
-  <body>
-	<button class="myButton">Связаться нами</button>
-    <form id="myForm" method="POST" action="https://api.slapform.com/aXHxW8DxN">
-		<h3>Заполните форму</h3>
-		<div id="info">
+function openForm() {
+    history.pushState({page: 2}, "Form", "?form");
+    return false;
+}
 
-			<div class="pole">
-				Имя: 
-				<input type="text" id="name_polz" maxlength="25" size="25" placeholder="Введите ваше имя">
-			</div>
+function openHome() {
+    history.replaceState({page: 1}, "Home", "?home");
+    return false;
+}
 
-			<div class="pole">
-				Email: 
-            	<input id="email_polz" type="email" maxlength="128" size="40" placeholder="Введите ваш email">
-			</div>
+$(document).ready(function () {
+    $(".myButton").click(function (event) {
+        openForm();
+        event.preventDefault();
+        $("#myOverlay").fadeIn(297, function () {
+            $("#myForm").css("display", "block").animate({opacity: 1}, 198);
+        });
+        if (localStorage.getItem("name").length > 0) {
+            document.querySelector("#name_polz").value =
+            localStorage.getItem("name");
+        }
+        if (localStorage.getItem("email").length > 0) {
+            document.querySelector("#email_polz").value =
+            localStorage.getItem("email");
+        }
+        if (localStorage.getItem("mes").length > 0) {
+            document.querySelector("#mes").value =
+            localStorage.getItem("mes");
+        }
+        if (localStorage.getItem("check") === "true") {
+            document.querySelector("#check").checked = true;
+        }
+    });
 
-			<div class="pole">
-				Поле для сообщения:
-				<br>
-				<textarea name="Mes" id="mes" cols="30" rows="3" maxlength="120" placeholder="Введите ваше сообщение"></textarea>
-			</div>
+    $("#myOverlay, #close").click(function () {
+        $("#myForm").animate({opacity: 0}, 198, function () {
+            $(this).css("display", "none");
+            $("#myOverlay").fadeOut(297);
+            openHome();
+        });
+    });
 
-			<div class="pole">
-				С контрактом ознакомлен(а):
-				<input id="check" type="checkbox">
-			</div>
+    $("#lete").click(function () {
+        var slapform = new Slapform();
+        $("#lete").prop("disabled", true);
+        slapform.submit({
+            data: {
+                checkbox: localStorage.getItem("check"),
+                email: localStorage.getItem("email"),
+                message: localStorage.getItem("mes"),
+                name: localStorage.getItem("name")
+            },
+            form: "aXHxW8DxN"
+        }).then(function () {
+            alert("Ваше сообщение успешно отправлено!");
+        }).catch(function () {
+            alert("Ошибка отправки сообщения. Попробуйте ещё раз.");
+        });
+        document.querySelector("#name_polz").value = "";
+        document.querySelector("#email_polz").value = "";
+        document.querySelector("#mes").value = "";
+        document.querySelector("#check").checked = false;
+        localStorage.clear();
+        return false;
+    });
 
-			<div id="slide">
-				<button type="submit" id="close" onclick="return openHome()">Назад</button>
-				<button type="submit" id="lete" disabled>Отправить</button>
-			</div>
+    addEventListener("popstate", function () {
+        $("#myForm").animate({opacity: 0}, 198, function () {
+            $(this).css("display", "none");
+            $("#myOverlay").fadeOut(297);
+            openHome();
+        });
+    }, false);
 
-		</div>
-	</form>
-    <div id="myOverlay"></div>
-  </body>
-</html>
+    $("#name_polz, #email_polz, #mes, #check").change(function () {
+        var nam = $("#name_polz").val();
+        var email = $("#email_polz").val();
+        var mes = $("#mes").val();
+        var check = $("#check").prop("checked");
+        localStorage.setItem("name", nam);
+        localStorage.setItem("email", email);
+        localStorage.setItem("mes", mes);
+        if (check) {
+            localStorage.setItem("check", true);
+        } else {
+            localStorage.setItem("check", false);
+        }
+        if (nam.length > 0 && email.length > 0 && mes.length > 0 && check) {
+            $("#lete").prop("disabled", false);
+        } else {
+            $("#lete").prop("disabled", true);
+        }
+        return false;
+    });
+});
