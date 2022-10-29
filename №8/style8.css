@@ -11,7 +11,7 @@ body{
 	height: 6vh;
 	width: 17vw;
 	max-width: 250px;
-	font-size: calc(1.1*1vw);
+	font-size: 1vw;
 	background-color: rgb(157, 248, 92);
 	border-radius: 0.6em;
 }
