@@ -5,12 +5,12 @@ history, Slapform, addEventListener, $
 /*jslint devel */
 
 function openForm() {
-    history.pushState({page: 1}, "Form", "?form");
+    history.pushState({page: 2}, "Form", "?form");
     return false;
 }
 
 function openHome() {
-    history.back();
+    history.replaceState({page: 1}, "Home", "?home");
     return false;
 }
 
