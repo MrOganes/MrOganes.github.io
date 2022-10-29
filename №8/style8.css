@@ -8,10 +8,12 @@ body{
 
 .myButton{
 	margin-top:40vh;
-	height: 6vh;
-	width: 17vw;
-	max-width: 250px;
-	font-size: calc(1.2*1vw);
+	height: 5vh;
+	width: 15vw;
+	max-width: 200px;
+	min-width: 100px;
+	min-height: 40px;
+	font-size: 16px;
 	background-color: rgb(157, 248, 92);
 	border-radius: 0.6em;
 }
@@ -66,6 +68,7 @@ textarea{
 		opacity: 0;
 		z-index: 1;
 		text-align: center;
+		
 	}
 
 	#email_polz{
