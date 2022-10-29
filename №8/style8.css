@@ -28,7 +28,7 @@ textarea{
 	margin-top: 5vh;
 }
 
-@media (min-width: 560px ) {
+@media (min-width: 400px ) {
 	#myForm {
 		width: 25vw;
 		min-width: 300px;
@@ -52,7 +52,7 @@ textarea{
 	}
 }
 
-@media (max-width: 560px) {
+@media (max-width: 400px) {
 	#myForm {
 		width: 80vw;
 		max-width: 300px;
